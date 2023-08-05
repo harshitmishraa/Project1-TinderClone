@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+* {
+  font-family: "Readex Pro", "sans-sarif";
+}
+
+.primaryButton {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  background: linear-gradient(45deg, rgba(254, 48, 114), rgba(255, 89, 64));
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+}
+
+h2 {
+  font-style: italic;
+}
+.primaryButton:hover {
+  background: linear-gradient(260deg, rgba(254, 48, 114), rgba(255, 89, 64));
+}
+
+/*------------ Navigation Bar ---------------*/
+
+nav {
+  width: 99.7%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .nav-button {
+  display: inline-table;
+  color: rgba(254, 48, 114);
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 3px 15px;
+  border-radius: 10px;
+  border: 0.5px solid rgba(254, 48, 114);
+  margin: 10px;
+}
+
+nav .nav-button:disabled {
+  background-color: rgb(181, 180, 180);
+  color: rgba(193, 42, 90);
+}
+
+nav .logo-container {
+  width: 150px;
+  margin: 15px;
+  background-position: left;
+  border: none;
+  margin-left: 5px;
+}
+
+nav .logo-container .logo {
+  width: 80%;
+}
+
+.primary-title {
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+}
+
+.secondary-button {
+  color: rgb(121, 119, 119);
+  background-color: rgb(255, 255, 255);
+  font-weight: 500px;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: solid 2px rgb(121, 119, 119);
+  margin: 6px;
+}
+
+.secondary-button:hover {
+  color: rgb(48, 48, 48);
+  border: solid 2px rgb(48, 48, 48);
+}
+
+/*---------HomePage-----------*/
+
+.overlay {
+  width: 100vw;
+  height: 500vh;
+  position: relative;
+  background: linear-gradient(to bottom, #000000a6 0%, #00000000 100%),
+    url(images/BG Home.jpg);
+}
+
+.Home {
+  margin-top: 30vh;
+}
+/*---------AuthModel-----------*/
+
+.auth-model {
+  position: absolute;
+  font-size: 30px;
+  top: 290px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 500px;
+  height: 700px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.auth-model .close-icon {
+  float: right;
+}
+
+.auth-model form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-model input[type="password"],
+.auth-model input[type="email"] {
+  padding: 8px;
+  margin: 8px;
+  font-size: 15px;
+}
+
+
+
+/*---------ONBOARDING PAGE-----------*/
+.onboarding {
+  border-top: solid 1px rgb(154, 154, 154);
+}
+
+.onboarding form {
+  display: flex;
+  justify-content: center;
+}
+
+.onboarding form section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 35%;
+  text-align: start;
+}
+
+.onboarding form label {
+  margin: 10px 0px;
+}
+
+.onboarding form input {
+  padding: 15px 30px;
+  margin: 10px 0px;
+  font-size: 15px;
+  border: solid 2px rgb(219, 219, 219);
+  border-radius: 10px;
+}
+
+.onboarding form input[type="number"]::-webkit-inner-spin-button,
+.onboarding form input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.onboarding form .multiple-input-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.onboarding form .multiple-input-container input {
+  margin-right: 10px;
+}
+.onboarding form .multiple-input-container label {
+  padding: 10px;
+  border: solid 2px rgb(144, 144, 144);
+  border-radius: 10px;
+  transition: all 0.3s;
+  margin-right: 10px;
+}
+
+.onboarding form input[type="radio"] {
+  display: none;
+}
+
+.onboarding form input[type="number"] {
+  width: 10%;
+}
+
+.onboarding form input[type="radio"]:checked + label {
+  border: solid 2px rgb(221, 39, 22);
+}
+
+.onboarding form input[type="submit"]:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.onboarding form input[type="submit"]:active {
+  background-color: rgb(226, 115, 115);
+}
+
+.onboarding form .photo-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.onboarding form .photo-container img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*---------------DashBoard Page-----------*/
+
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard .swipeContainer {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.swipe {
+  position: absolute;
+}
+
+.dashboard .cardContainer {
+  width: 400px;
+  height: 650px;
+}
+
+.card {
+  background-color: #fff;
+  width: 400px;
+  height: 650px;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+}
+
+/*.cardContent {
+  width: 100%;
+  height: 100%;
+}
+*/
+
+.card h3 {
+  margin-top: 0;
+}
+
+.dashboard .swipeInfo {
+  position: absolute;
+  bottom: 0;
+  padding: 40px;
+}
+
+/*----------------CHAT CONTAINER-------------*/
+.chatContainer {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  width: 30%;
+  text-align: left;
+  z-index: 1;
+}
+
+.chatContainer .chatContainerHeader {
+  background: linear-gradient(45deg, rgba(254, 48, 114), rgba(255, 89, 64));
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatContainer .option {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-bottom: solid 4px rgb(243, 33, 33);
+  font-size: 20px;
+  margin: 2px;
+  padding: 10px;
+}
+
+.chatContainer .option:disabled {
+  border-bottom: solid 4px rgb(187, 187, 187);
+}
+
+.chatContainer .logoutIcon {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.chatContainer .profile {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.imageContainer {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.imageContainer img {
+  width: 100%;
+}
+
+/*--------CHAT DISPLAY--------*/
+
+.chatDisplay {
+  padding: 20px;
+  height: 60vh;
+  overflow-y: auto;
+}
+
+.matchesDisplay {
+  padding: 20px;
+  height: 60vh;
+  overflow-y: auto;
+}
+
+/*--------CHAT INPUT--------*/
+
+.chatInput {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
